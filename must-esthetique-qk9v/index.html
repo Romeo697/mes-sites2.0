@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Must-Esthétique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@400;700&display=swap">
+<style>
+/* Site vitrine de démonstration, apparence claire unique (couleurs de marque fixes). */
+:root{color-scheme:light;--bg:#f7f1ef;--ink:#2a1c1e;--muted:#6d5a5d;--line:#ead9d6;--accent:#a4475a;--warm:#d9a86c;--deep:#2a1a1e;--paper:#fff;
+  --head:'Cormorant Garamond', Georgia, serif;--body:'Lato', Arial, sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;padding-bottom:74px}
+@media (min-width:821px){body{padding-bottom:0}}
+a{color:inherit}
+img,svg{display:block}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:16px}
+:focus-visible{outline:3px solid var(--warm);outline-offset:2px}
+h1,h2,h3{font-family:var(--head);font-weight:600;letter-spacing:0;text-transform:none;margin:0}
+h2{font-size:clamp(26px,3.4vw,36px);line-height:1.15;margin-bottom:10px}
+.sub{color:var(--muted);margin:0 0 28px;max-width:62ch}
+section[id]{scroll-margin-top:76px}
+
+.demo{margin:0;background:#fff8d6;color:#5b4a00;font-size:13px;text-align:center;padding:6px 16px;border-bottom:1px solid #eadb8f}
+.info{background:var(--deep);color:rgba(255,255,255,.85);font-size:13px}
+.info .wrap{display:flex;flex-wrap:wrap;gap:4px 22px;padding-block:7px}
+.info b{color:#fff;font-weight:600}
+@media (max-width:640px){.info .hide-s{display:none}}
+
+.top{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-m{width:42px;height:42px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-family:var(--head);font-weight:700;font-size:20px;flex:none}
+.logo-n{font-family:var(--head);font-weight:600;font-size:24px;line-height:1.1;text-transform:none}
+.logo-n small{display:block;font-family:var(--body);font-size:12px;font-weight:400;color:var(--muted);text-transform:none;letter-spacing:0}
+.nav{display:flex;align-items:center;gap:2px}
+.nav a{text-decoration:none;font-size:15px;font-weight:600;padding:8px 11px;border-radius:6px}
+.nav a:hover{color:var(--accent)}
+@media (max-width:820px){.nav a:not(.btn){display:none}}
+@media (max-width:520px){.nav{display:none}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;font:inherit;font-weight:700;font-size:15px;text-decoration:none;border-radius:6px;padding:13px 20px;border:2px solid transparent;cursor:pointer;line-height:1.2}
+.btn-main{background:var(--accent);color:#fff}
+.btn-main:hover{filter:brightness(.92)}
+.btn-line{border-color:currentColor;background:transparent}
+.block{display:flex;width:100%}
+
+.hero{background:var(--bg);border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:40px;align-items:center;padding-block:52px}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:28px;padding-block:36px}}
+.hero-k{font-weight:600;color:var(--accent);margin:0 0 10px;font-size:15px}
+h1{font-size:clamp(30px,4.4vw,48px);line-height:1.12}
+.lead{font-size:18px;color:var(--muted);margin:16px 0 0;max-width:56ch}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.checks{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:15px;font-weight:600}
+.checks li::before{content:"✓";color:var(--accent);font-weight:800;margin-right:7px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px;box-shadow:0 12px 30px -18px rgba(0,0,0,.35)}
+.rating{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.rating b{color:var(--ink)}
+.rating small{font-size:12px}
+.st{color:#f1a20b;letter-spacing:1px}
+.card-k{margin:0 0 12px;font-size:14px;color:var(--accent);font-weight:700}
+.card-t{font-family:var(--head);font-weight:600;text-transform:none;font-size:21px;margin:0 0 6px;line-height:1.2}
+.card-tel{display:block;font-size:26px;font-weight:800;text-decoration:none;color:var(--accent);margin-bottom:2px}
+.card-h{margin:0 0 16px;font-size:14px;color:var(--muted)}
+
+section.s{padding-block:60px}
+section.alt{background:var(--bg)}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:860px){.grid3{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.grid3{grid-template-columns:1fr}}
+.svc{border:1px solid var(--line);border-radius:10px;padding:20px;background:#fff;display:flex;flex-direction:column;gap:6px}
+.svc-h{display:flex;align-items:center;gap:10px}
+.svc-h svg{width:26px;height:26px;color:var(--accent);flex:none}
+.svc h3{font-family:var(--body);font-weight:700;font-size:17px;text-transform:none;letter-spacing:0}
+.svc p{margin:0;color:var(--muted);font-size:15px;flex:1}
+.svc .pr{font-size:14px;font-weight:700;color:var(--accent);margin-top:6px}
+
+.ph{position:relative;background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 7%,#fff) 0 16px,color-mix(in srgb,var(--accent) 11%,#fff) 16px 32px);display:grid;place-items:center;color:color-mix(in srgb,var(--accent) 55%,#fff)}
+.ph svg{width:30%;max-width:72px;height:auto}
+.ph-tag{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.9);color:var(--muted);font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px}
+
+.about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:40px;align-items:center}
+@media (max-width:760px){.about{grid-template-columns:1fr;gap:24px}}
+.about .ph{aspect-ratio:4/5;border-radius:10px;max-height:440px}
+.about p{margin:0 0 14px;font-size:17px}
+.sign{display:flex;align-items:center;gap:12px;margin-top:20px}
+.avatar{width:48px;height:48px;border-radius:50%;background:var(--deep);color:#fff;display:grid;place-items:center;font-weight:700}
+.sign b{display:block}
+.sign span{font-size:14px;color:var(--muted)}
+
+.gal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media (max-width:900px){.gal{grid-template-columns:1fr 1fr}}
+.gal figure{margin:0}
+.gal .ph{aspect-ratio:1;border-radius:8px}
+.gal figcaption{padding:8px 2px 0;font-size:14px}
+.gal figcaption b{display:block}
+.gal figcaption span{color:var(--muted);font-size:13px}
+
+.rev-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:24px}
+.rev-head .big{font-size:40px;font-weight:800;line-height:1}
+.rev{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}
+.rev p{margin:8px 0 12px}
+.rev b{font-size:14px}
+.rev small{display:block;color:var(--muted);font-size:12px}
+.infos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:640px){.infos{grid-template-columns:1fr}}
+.infos div{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:16px 18px}
+.infos b{display:block;margin-bottom:4px}
+.infos p{margin:0;color:var(--muted);font-size:15px}
+
+.zone{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:36px}
+@media (max-width:820px){.zone{grid-template-columns:1fr}}
+.towns{columns:2;column-gap:24px;padding:0;margin:0;list-style:none}
+.towns li{padding:6px 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.coord{background:var(--deep);color:#fff;border-radius:10px;padding:24px}
+.coord h3{font-family:var(--body);text-transform:none;letter-spacing:0;font-size:18px;margin-bottom:12px}
+.coord p{margin:0 0 10px;color:rgba(255,255,255,.85)}
+.coord b{color:#fff}
+
+.faq{max-width:820px}
+.faq details{border-bottom:1px solid var(--line);padding:16px 0}
+.faq summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::after{content:"+";color:var(--accent);font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:10px 0 0;color:var(--muted)}
+
+.form-box{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:36px;align-items:start}
+@media (max-width:820px){.form-box{grid-template-columns:1fr}}
+.form-box ul{padding-left:20px;margin:0}
+.form-box li{margin-bottom:6px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px}
+@media (max-width:560px){form{grid-template-columns:1fr;padding:16px}}
+form .full{grid-column:1/-1}
+label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1px solid #c9cdd2;border-radius:6px;padding:11px 12px;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);outline:2px solid color-mix(in srgb,var(--accent) 25%,transparent)}
+.ok{grid-column:1/-1;margin:0;background:color-mix(in srgb,var(--accent) 10%,#fff);border-radius:6px;padding:12px 14px;font-weight:600}
+.legal{grid-column:1/-1;margin:0;font-size:12px;color:var(--muted)}
+
+footer{background:var(--deep);color:rgba(255,255,255,.75);font-size:14px}
+footer .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-block:36px}
+@media (max-width:760px){footer .wrap{grid-template-columns:1fr}}
+footer b{color:#fff;display:block;margin-bottom:6px}
+footer p{margin:0 0 4px}
+.copy{border-top:1px solid rgba(255,255,255,.12);text-align:center;padding:14px 16px;font-size:12px;color:rgba(255,255,255,.55)}
+
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,0,0,.08)}
+.callbar .btn{flex:1;padding:12px 10px}
+@media (max-width:820px){.callbar{display:flex}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.logo-m{font-size:20px}
+.demo{background:#eef4ff;color:#23406e;border-bottom-color:#c9d8f2}</style>
+</head>
+<body>
+<p class="demo">Maquette proposée à Must-Esthétique · non publiée · textes et photos à valider ensemble</p>
+
+<div class="info"><div class="wrap">
+  <span>Tél. <b>06 68 80 93 24</b></span>
+  <span class="hide-s">Du lundi au samedi · jusqu'à 21 h le lundi</span>
+  <span>Saint-Laurent-de-Mure</span>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="#accueil"><span class="logo-m">M</span><span class="logo-n">Must-Esthétique<small>Institut d'esthétique · Saint-Laurent-de-Mure</small></span></a>
+  <nav class="nav" aria-label="Menu">
+    <a href="#services">Nos prestations</a>
+    <a href="#apropos">L'institut</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn-main" href="#devis">Rendez-vous</a>
+  </nav>
+</div></header>
+
+<main id="accueil">
+  <section class="hero"><div class="wrap">
+    <div>
+      <p class="hero-k">Institut d'esthétique · Saint-Laurent-de-Mure</p>
+      <h1>Must-Esthétique, votre institut de beauté à Saint-Laurent-de-Mure.</h1>
+      <p class="lead">Soins du visage, épilations, beauté des mains et des pieds : prenez rendez-vous au 22 rue de Toulon. Ouvert jusqu'à 21 h le lundi.</p>
+      <div class="ctas">
+        <a class="btn btn-main" href="#devis">Prendre rendez-vous</a>
+        <a class="btn btn-line" href="#services">Nos prestations</a>
+      </div>
+      <ul class="checks"><li>Sur rendez-vous</li><li>Ouvert jusqu'à 21 h le lundi</li><li>Du lundi au samedi</li></ul>
+    </div>
+    <aside class="card" aria-label="Contact">
+      <p class="rating"><span class="st" aria-hidden="true">★★★★★</span> <b>4,8/5</b> · 69 avis Google</p>
+      <p class="card-t">Prendre rendez-vous</p>
+      <span class="card-tel">06 68 80 93 24</span>
+      <p class="card-h">Du lundi au samedi · jusqu'à 21 h le lundi</p>
+      <a class="btn btn-main block" href="#devis">Prendre rendez-vous</a>
+    </aside>
+  </div></section>
+
+  <section class="s" id="services" aria-labelledby="t-svc"><div class="wrap">
+    <h2 id="t-svc">Nos prestations</h2>
+    <p class="sub">Liste à valider avec vous.</p>
+    <div class="grid3">
+      <article class="svc"><div class="svc-h"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="14" r="9"/><path d="M12 13h.01M20 13h.01M12 18c2 2 6 2 8 0M9 27c2-2 5-3 7-3s5 1 7 3"/></svg><h3>Soins du visage</h3></div><p>Nettoyage de peau, soins hydratants et éclat.</p></article>
+      <article class="svc"><div class="svc-h"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3v8M16 21v8M3 16h8M21 16h8M8 8l4 4M20 20l4 4M8 24l4-4M20 12l4-4"/></svg><h3>Épilations</h3></div><p>Toutes zones.</p></article>
+      <article class="svc"><div class="svc-h"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 28v-8L6 15a2 2 0 0 1 3-3l3 3V5a2 2 0 0 1 4 0v8-10a2 2 0 0 1 4 0v10-7a2 2 0 0 1 4 0v14a8 8 0 0 1-8 8Z"/></svg><h3>Mains et pieds</h3></div><p>Manucure, beauté des pieds, vernis semi-permanent.</p></article>
+      <article class="svc"><div class="svc-h"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3c6 8 9 12 9 17a9 9 0 0 1-18 0c0-5 3-9 9-17Z"/></svg><h3>Soins du corps</h3></div><p>Moments de détente.</p></article>
+      <article class="svc"><div class="svc-h"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3v8M16 21v8M3 16h8M21 16h8M8 8l4 4M20 20l4 4M8 24l4-4M20 12l4-4"/></svg><h3>Regard</h3></div><p>Cils et sourcils.</p></article>
+      <article class="svc"><div class="svc-h"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 27S4 20 4 12a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 8-12 15-12 15Z"/></svg><h3>Cartes cadeaux</h3></div><p>Pour offrir un soin.</p></article>
+    </div>
+  </div></section>
+
+  <section class="s alt" id="apropos" aria-labelledby="t-about"><div class="wrap about">
+    <div class="ph" role="img" aria-label="Emplacement photo : L'institut"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="14" r="9"/><path d="M12 13h.01M20 13h.01M12 18c2 2 6 2 8 0M9 27c2-2 5-3 7-3s5 1 7 3"/></svg><span class="ph-tag">Vos photos ici</span></div>
+    <div>
+      <h2 id="t-about">L'institut</h2>
+      <p>Must-Esthétique vous accueille au 22 rue de Toulon, à Saint-Laurent-de-Mure.</p>
+      <p>Un institut où l'on prend soin de vous, avec des horaires pensés pour s'adapter à votre emploi du temps, même en soirée le lundi.</p>
+      
+    </div>
+  </div></section>
+
+  <section class="s" aria-labelledby="t-gal"><div class="wrap">
+    <h2 id="t-gal">L'institut</h2>
+    <p class="sub">Ces emplacements accueilleront vos propres photos.</p>
+    <div class="gal">
+      <figure><div class="ph" role="img" aria-label="Emplacement photo : La cabine"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3v8M16 21v8M3 16h8M21 16h8M8 8l4 4M20 20l4 4M8 24l4-4M20 12l4-4"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>La cabine</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Emplacement photo : Mains et pieds"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 28v-8L6 15a2 2 0 0 1 3-3l3 3V5a2 2 0 0 1 4 0v8-10a2 2 0 0 1 4 0v10-7a2 2 0 0 1 4 0v14a8 8 0 0 1-8 8Z"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Mains et pieds</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Emplacement photo : Soins du visage"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3c6 8 9 12 9 17a9 9 0 0 1-18 0c0-5 3-9 9-17Z"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Soins du visage</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Emplacement photo : L'accueil"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3v8M16 21v8M3 16h8M21 16h8M8 8l4 4M20 20l4 4M8 24l4-4M20 12l4-4"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>L'accueil</b><span>22 rue de Toulon</span></figcaption></figure>
+    </div>
+  </div></section>
+
+  
+
+  <section class="s alt" aria-labelledby="t-rev"><div class="wrap">
+    <h2 id="t-rev">Vos clients en parlent</h2>
+    <div class="rev-head"><span class="big">4,8</span><span class="st" aria-hidden="true">★★★★★</span><span>69 avis sur Google</span></div>
+    <p class="sub">Ici s'afficheront vos avis Google, pour rassurer les nouveaux clients.</p>
+  </div></section>
+
+  <section class="s" id="contact" aria-labelledby="t-zone"><div class="wrap zone">
+    <div>
+      <h2 id="t-zone">Horaires et accès</h2>
+      <p class="sub">22 rue de Toulon, 69720 Saint-Laurent-de-Mure.</p>
+      <ul class="towns"><li>Lundi : 10 h – 12 h, 14 h 30 – 21 h</li><li>Mardi : 14 h 30 – 18 h 30</li><li>Mercredi : 10 h – 19 h</li><li>Jeudi : 9 h 30 – 18 h 30</li><li>Vendredi : 9 h 30 – 19 h</li><li>Samedi : 9 h 30 – 16 h</li><li>Dimanche : fermé</li></ul>
+    </div>
+    <div class="coord">
+      <h3>Must-Esthétique</h3>
+      <p>22 rue de Toulon<br>69720 Saint-Laurent-de-Mure</p>
+      <p>Tél. <b>06 68 80 93 24</b></p>
+      
+      <p>Du lundi au samedi · jusqu'à 21 h le lundi</p>
+      <a class="btn btn-main block" href="#devis" style="margin-top:14px">Prendre rendez-vous</a>
+    </div>
+  </div></section>
+
+  <section class="s alt" aria-labelledby="t-faq"><div class="wrap">
+    <h2 id="t-faq">Questions fréquentes</h2>
+    <div class="faq"><details><summary>Faut-il prendre rendez-vous ?</summary><p>Oui, par téléphone au 06 68 80 93 24 ou avec le formulaire.</p></details><details><summary>Êtes-vous ouverts en soirée ?</summary><p>Oui, le lundi jusqu'à 21 h.</p></details><details><summary>Proposez-vous des cartes cadeaux ?</summary><p>Renseignez-vous auprès de l'institut.</p></details></div>
+  </div></section>
+
+  <section class="s" id="devis" aria-labelledby="t-devis"><div class="wrap form-box">
+    <div>
+      <h2 id="t-devis">Prendre rendez-vous</h2>
+      <p class="sub">Laissez vos coordonnées, nous vous rappelons pour fixer le créneau.</p>
+      <ul><li>Rappel rapide</li><li>Confirmation du créneau</li><li>Prévenir en cas d'empêchement</li></ul>
+    </div>
+    <form id="f" novalidate>
+      <label for="f1">Nom<input id="f1" autocomplete="name" required></label>
+      <label for="f2">Téléphone<input id="f2" type="tel" autocomplete="tel" required></label>
+      <label for="f3" class="full">Demande<select id="f3"><option>Soin du visage</option><option>Épilation</option><option>Mains / pieds</option><option>Soin du corps</option><option>Regard</option><option>Carte cadeau</option></select></label>
+      <label for="f4">Jour souhaité<input id="f4"></label>
+      <label for="f5">Créneau préféré<input id="f5"></label>
+      <label for="f6" class="full">Message<textarea id="f6" placeholder="Ex : épilation et soin du visage, plutôt le lundi soir"></textarea></label>
+      <button class="btn btn-main full" type="submit">Envoyer ma demande</button>
+      <p class="ok" id="ok" hidden>Merci ! Sur cette maquette, aucun message n'est envoyé. Une fois le site en ligne, les demandes arriveront directement chez Must-Esthétique.</p>
+      <p class="legal">Vos coordonnées servent uniquement à vous recontacter.</p>
+    </form>
+  </div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Must-Esthétique</b><p>Institut d'esthétique · Saint-Laurent-de-Mure</p><p>22 rue de Toulon, 69720 Saint-Laurent-de-Mure</p></div>
+    <div><b>Contact</b><p>Tél. 06 68 80 93 24</p><p>Du lundi au samedi · jusqu'à 21 h le lundi</p></div>
+    <div><b>Informations</b><p>Mentions légales</p><p>Politique de confidentialité</p></div>
+  </div>
+  <p class="copy">© 2026 Must-Esthétique</p>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-line" href="#contact">06 68 80 93 24</a>
+  <a class="btn btn-main" href="#devis">Rendez-vous</a>
+</div>
+
+<script>
+document.getElementById("f").addEventListener("submit", function (e) { e.preventDefault(); document.getElementById("ok").hidden = false; });
+</script>
+</body>
+</html>
