@@ -155,11 +155,26 @@ footer p{margin:0 0 4px}
 @media (max-width:820px){.callbar{display:flex}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+.ph{color:var(--accent);background:radial-gradient(circle at 18% 22%,color-mix(in srgb,var(--warm) 38%,#fff) 0 16%,transparent 17%),radial-gradient(circle at 82% 78%,color-mix(in srgb,var(--accent) 22%,#fff) 0 24%,transparent 25%),radial-gradient(circle at 70% 18%,rgba(255,255,255,.7) 0 7%,transparent 8%),linear-gradient(135deg,color-mix(in srgb,var(--accent) 12%,#fff),color-mix(in srgb,var(--warm) 24%,#fff))}
+.gal figure:nth-child(2) .ph{background:radial-gradient(circle at 80% 25%,color-mix(in srgb,var(--warm) 38%,#fff) 0 18%,transparent 19%),radial-gradient(circle at 15% 85%,color-mix(in srgb,var(--accent) 20%,#fff) 0 26%,transparent 27%),linear-gradient(200deg,color-mix(in srgb,var(--warm) 18%,#fff),color-mix(in srgb,var(--accent) 16%,#fff))}
+.gal figure:nth-child(3) .ph{background:radial-gradient(circle at 50% 110%,color-mix(in srgb,var(--accent) 26%,#fff) 0 40%,transparent 41%),radial-gradient(circle at 22% 20%,rgba(255,255,255,.8) 0 9%,transparent 10%),linear-gradient(160deg,color-mix(in srgb,var(--accent) 10%,#fff),color-mix(in srgb,var(--warm) 30%,#fff))}
+.gal figure:nth-child(4) .ph{background:radial-gradient(circle at 25% 75%,color-mix(in srgb,var(--warm) 34%,#fff) 0 22%,transparent 23%),radial-gradient(circle at 78% 30%,color-mix(in srgb,var(--accent) 18%,#fff) 0 20%,transparent 21%),linear-gradient(90deg,color-mix(in srgb,var(--accent) 14%,#fff),color-mix(in srgb,var(--warm) 20%,#fff))}
+.ph svg{width:72px;height:72px;max-width:none;padding:16px;background:#fff;border-radius:50%;box-shadow:0 8px 22px rgba(0,0,0,.10)}
+.about .ph svg{width:92px;height:92px;padding:20px}
+.tar{max-width:720px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 22px}
+.tar-r{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.tar-r:last-child{border-bottom:0}
+.tar-r b{color:var(--accent);white-space:nowrap;font-variant-numeric:tabular-nums}
+.tar-note{max-width:720px;margin:12px 0 0;font-size:13px;color:var(--muted)}
+.revbox{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 24px}
+.revbox .big{font-size:48px;font-weight:800;line-height:1}
+.revbox .st{font-size:22px}
+.revbox p{margin:4px 0 0;color:var(--muted)}
 .logo-m{font-size:16px}
 .demo{background:#eef4ff;color:#23406e;border-bottom-color:#c9d8f2}</style>
 </head>
 <body>
-<p class="demo">Maquette proposée à Estelle Caron · non publiée · textes et photos à valider ensemble</p>
+<p class="demo">Maquette proposée à Estelle Caron · images d'illustration · tout est modifiable</p>
 
 <div class="info"><div class="wrap">
   <span>Tél. <b>06 67 15 36 35</b></span>
@@ -171,6 +186,7 @@ footer p{margin:0 0 4px}
   <a class="logo" href="#accueil"><span class="logo-m">EC</span><span class="logo-n">Estelle Caron<small>Diététicienne-nutritionniste · Saint-Bonnet-de-Mure</small></span></a>
   <nav class="nav" aria-label="Menu">
     <a href="#services">Mes accompagnements</a>
+    <a href="#tarifs">Tarifs</a>
     <a href="#apropos">Qui suis-je</a>
     <a href="#contact">Contact</a>
     <a class="btn btn-main" href="#devis">Rendez-vous</a>
@@ -211,8 +227,14 @@ footer p{margin:0 0 4px}
     </div>
   </div></section>
 
+  <section class="s" id="tarifs" aria-labelledby="t-tar"><div class="wrap">
+    <h2 id="t-tar">Tarifs</h2>
+    <div class="tar"><div class="tar-r"><span>Première consultation (1 h)</span><b>55 €</b></div><div class="tar-r"><span>Consultation de suivi</span><b>40 €</b></div><div class="tar-r"><span>Consultation en visio</span><b>mêmes tarifs</b></div></div>
+    <p class="tar-note">Tarifs donnés à titre d'exemple pour la maquette : vos vrais prix les remplaceront.</p>
+  </div></section>
+
   <section class="s alt" id="apropos" aria-labelledby="t-about"><div class="wrap about">
-    <div class="ph" role="img" aria-label="Emplacement photo : Qui suis-je"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4v24M8 28h16M6 8h20M6 8l-4 9h8ZM26 8l-4 9h8Z"/></svg><span class="ph-tag">Vos photos ici</span></div>
+    <div class="ph" role="img" aria-label="Illustration : Qui suis-je"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4v24M8 28h16M6 8h20M6 8l-4 9h8ZM26 8l-4 9h8Z"/></svg><span class="ph-tag">Illustration</span></div>
     <div>
       <h2 id="t-about">Qui suis-je</h2>
       <p>Diététicienne-nutritionniste, je reçois en cabinet à Saint-Bonnet-de-Mure et en visio-consultation.</p>
@@ -223,12 +245,12 @@ footer p{margin:0 0 4px}
 
   <section class="s" aria-labelledby="t-gal"><div class="wrap">
     <h2 id="t-gal">Le cabinet</h2>
-    <p class="sub">Ces emplacements accueilleront vos propres photos.</p>
+    <p class="sub">Images d'illustration, remplacées par vos propres photos sur le site final.</p>
     <div class="gal">
-      <figure><div class="ph" role="img" aria-label="Emplacement photo : Le cabinet"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 27S4 20 4 12a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 8-12 15-12 15Z"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Le cabinet</b><span>Saint-Bonnet-de-Mure</span></figcaption></figure>
-      <figure><div class="ph" role="img" aria-label="Emplacement photo : Visio-consultation"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3c6 8 9 12 9 17a9 9 0 0 1-18 0c0-5 3-9 9-17Z"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Visio-consultation</b><span>Depuis chez vous</span></figcaption></figure>
-      <figure><div class="ph" role="img" aria-label="Emplacement photo : Ateliers"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 26C6 12 14 5 27 5c0 13-7 21-21 21ZM6 26 18 14"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Ateliers</b></figcaption></figure>
-      <figure><div class="ph" role="img" aria-label="Emplacement photo : Publications"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4h8v8h8v8h-8v8h-8v-8H4v-8h8Z"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Publications</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Illustration : Le cabinet"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 27S4 20 4 12a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 8-12 15-12 15Z"/></svg><span class="ph-tag">Illustration</span></div><figcaption><b>Le cabinet</b><span>Saint-Bonnet-de-Mure</span></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Illustration : Visio-consultation"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3c6 8 9 12 9 17a9 9 0 0 1-18 0c0-5 3-9 9-17Z"/></svg><span class="ph-tag">Illustration</span></div><figcaption><b>Visio-consultation</b><span>Depuis chez vous</span></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Illustration : Ateliers"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 26C6 12 14 5 27 5c0 13-7 21-21 21ZM6 26 18 14"/></svg><span class="ph-tag">Illustration</span></div><figcaption><b>Ateliers</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Illustration : Publications"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4h8v8h8v8h-8v8h-8v-8H4v-8h8Z"/></svg><span class="ph-tag">Illustration</span></div><figcaption><b>Publications</b></figcaption></figure>
     </div>
   </div></section>
 
@@ -236,8 +258,7 @@ footer p{margin:0 0 4px}
 
   <section class="s alt" aria-labelledby="t-rev"><div class="wrap">
     <h2 id="t-rev">Vos clients en parlent</h2>
-    <div class="rev-head"><span class="big">5,0</span><span class="st" aria-hidden="true">★★★★★</span><span>6 avis sur Google</span></div>
-    <p class="sub">Ici s'afficheront vos avis Google, pour rassurer les nouveaux clients.</p>
+    <div class="revbox"><div><span class="big">5,0</span> <span class="st" aria-label="5,0 sur 5">★★★★★</span><p>Note moyenne sur 6 avis Google</p></div><a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&query=Estelle%20Caron%20Saint-Bonnet-de-Mure" target="_blank" rel="noopener">Voir les avis sur Google</a></div>
   </div></section>
 
   <section class="s" id="contact" aria-labelledby="t-zone"><div class="wrap zone">

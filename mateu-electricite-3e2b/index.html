@@ -155,11 +155,26 @@ footer p{margin:0 0 4px}
 @media (max-width:820px){.callbar{display:flex}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+.ph{color:var(--accent);background:radial-gradient(circle at 18% 22%,color-mix(in srgb,var(--warm) 38%,#fff) 0 16%,transparent 17%),radial-gradient(circle at 82% 78%,color-mix(in srgb,var(--accent) 22%,#fff) 0 24%,transparent 25%),radial-gradient(circle at 70% 18%,rgba(255,255,255,.7) 0 7%,transparent 8%),linear-gradient(135deg,color-mix(in srgb,var(--accent) 12%,#fff),color-mix(in srgb,var(--warm) 24%,#fff))}
+.gal figure:nth-child(2) .ph{background:radial-gradient(circle at 80% 25%,color-mix(in srgb,var(--warm) 38%,#fff) 0 18%,transparent 19%),radial-gradient(circle at 15% 85%,color-mix(in srgb,var(--accent) 20%,#fff) 0 26%,transparent 27%),linear-gradient(200deg,color-mix(in srgb,var(--warm) 18%,#fff),color-mix(in srgb,var(--accent) 16%,#fff))}
+.gal figure:nth-child(3) .ph{background:radial-gradient(circle at 50% 110%,color-mix(in srgb,var(--accent) 26%,#fff) 0 40%,transparent 41%),radial-gradient(circle at 22% 20%,rgba(255,255,255,.8) 0 9%,transparent 10%),linear-gradient(160deg,color-mix(in srgb,var(--accent) 10%,#fff),color-mix(in srgb,var(--warm) 30%,#fff))}
+.gal figure:nth-child(4) .ph{background:radial-gradient(circle at 25% 75%,color-mix(in srgb,var(--warm) 34%,#fff) 0 22%,transparent 23%),radial-gradient(circle at 78% 30%,color-mix(in srgb,var(--accent) 18%,#fff) 0 20%,transparent 21%),linear-gradient(90deg,color-mix(in srgb,var(--accent) 14%,#fff),color-mix(in srgb,var(--warm) 20%,#fff))}
+.ph svg{width:72px;height:72px;max-width:none;padding:16px;background:#fff;border-radius:50%;box-shadow:0 8px 22px rgba(0,0,0,.10)}
+.about .ph svg{width:92px;height:92px;padding:20px}
+.tar{max-width:720px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 22px}
+.tar-r{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.tar-r:last-child{border-bottom:0}
+.tar-r b{color:var(--accent);white-space:nowrap;font-variant-numeric:tabular-nums}
+.tar-note{max-width:720px;margin:12px 0 0;font-size:13px;color:var(--muted)}
+.revbox{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 24px}
+.revbox .big{font-size:48px;font-weight:800;line-height:1}
+.revbox .st{font-size:22px}
+.revbox p{margin:4px 0 0;color:var(--muted)}
 .logo-m{font-size:20px}
 .demo{background:#eef4ff;color:#23406e;border-bottom-color:#c9d8f2}</style>
 </head>
 <body>
-<p class="demo">Maquette proposée à Mateu Électricité · non publiée · textes et photos à valider ensemble</p>
+<p class="demo">Maquette proposée à Mateu Électricité · images d'illustration · tout est modifiable</p>
 
 <div class="info"><div class="wrap">
   <span>Tél. <b>04 78 40 40 24</b></span>
@@ -171,6 +186,7 @@ footer p{margin:0 0 4px}
   <a class="logo" href="#accueil"><span class="logo-m">M</span><span class="logo-n">Mateu Électricité<small>Électricien · Saint-Laurent-de-Mure</small></span></a>
   <nav class="nav" aria-label="Menu">
     <a href="#services">Nos activités</a>
+    <a href="#tarifs">Tarifs</a>
     <a href="#apropos">Une entreprise familiale</a>
     <a href="#contact">Contact</a>
     <a class="btn btn-main" href="#devis">Devis</a>
@@ -211,8 +227,14 @@ footer p{margin:0 0 4px}
     </div>
   </div></section>
 
+  <section class="s" id="tarifs" aria-labelledby="t-tar"><div class="wrap">
+    <h2 id="t-tar">Tarifs</h2>
+    <div class="tar"><div class="tar-r"><span>Installation électrique</span><b>Sur devis</b></div><div class="tar-r"><span>Domotique</span><b>Sur devis</b></div><div class="tar-r"><span>Alarme anti-intrusion</span><b>Sur devis</b></div><div class="tar-r"><span>Chauffage électrique</span><b>Sur devis</b></div><div class="tar-r"><span>Interphone et portier vidéo</span><b>Sur devis</b></div><div class="tar-r"><span>Motorisation porte et portail</span><b>Sur devis</b></div></div>
+    <p class="tar-note">Chaque demande est différente : contactez-nous pour recevoir un devis détaillé.</p>
+  </div></section>
+
   <section class="s alt" id="apropos" aria-labelledby="t-about"><div class="wrap about">
-    <div class="ph" role="img" aria-label="Emplacement photo : Une entreprise familiale"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="22" height="22" rx="5"/><path d="M12 13v3M20 13v3M12 21h8"/></svg><span class="ph-tag">Vos photos ici</span></div>
+    <div class="ph" role="img" aria-label="Illustration : Une entreprise familiale"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="22" height="22" rx="5"/><path d="M12 13v3M20 13v3M12 21h8"/></svg><span class="ph-tag">Illustration</span></div>
     <div>
       <h2 id="t-about">Une entreprise familiale</h2>
       <p>Depuis 1978, Mateu Électricité est installée à Saint-Laurent-de-Mure.</p>
@@ -223,12 +245,12 @@ footer p{margin:0 0 4px}
 
   <section class="s" aria-labelledby="t-gal"><div class="wrap">
     <h2 id="t-gal">Nos réalisations</h2>
-    <p class="sub">Ces emplacements accueilleront vos propres photos.</p>
+    <p class="sub">Images d'illustration, remplacées par vos propres photos sur le site final.</p>
     <div class="gal">
-      <figure><div class="ph" role="img" aria-label="Emplacement photo : Installation"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="3" width="12" height="26" rx="3"/><circle cx="16" cy="10" r="2"/><path d="M14 17h4M14 21h4"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Installation</b></figcaption></figure>
-      <figure><div class="ph" role="img" aria-label="Emplacement photo : Domotique"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3 5 7v8c0 7 5 12 11 14 6-2 11-7 11-14V7Z"/><path d="M11 16l4 4 7-8"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Domotique</b></figcaption></figure>
-      <figure><div class="ph" role="img" aria-label="Emplacement photo : Portier vidéo"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="24" height="16" rx="2"/><path d="M10 8v16M16 8v16M22 8v16"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Portier vidéo</b></figcaption></figure>
-      <figure><div class="ph" role="img" aria-label="Emplacement photo : Portail motorisé"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="14" height="26" rx="2"/><rect x="12" y="7" width="8" height="6" rx="1"/><circle cx="16" cy="19" r="2"/><path d="M13 25h6"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Portail motorisé</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Illustration : Installation"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="3" width="12" height="26" rx="3"/><circle cx="16" cy="10" r="2"/><path d="M14 17h4M14 21h4"/></svg><span class="ph-tag">Illustration</span></div><figcaption><b>Installation</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Illustration : Domotique"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3 5 7v8c0 7 5 12 11 14 6-2 11-7 11-14V7Z"/><path d="M11 16l4 4 7-8"/></svg><span class="ph-tag">Illustration</span></div><figcaption><b>Domotique</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Illustration : Portier vidéo"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="24" height="16" rx="2"/><path d="M10 8v16M16 8v16M22 8v16"/></svg><span class="ph-tag">Illustration</span></div><figcaption><b>Portier vidéo</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Illustration : Portail motorisé"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="14" height="26" rx="2"/><rect x="12" y="7" width="8" height="6" rx="1"/><circle cx="16" cy="19" r="2"/><path d="M13 25h6"/></svg><span class="ph-tag">Illustration</span></div><figcaption><b>Portail motorisé</b></figcaption></figure>
     </div>
   </div></section>
 
@@ -236,8 +258,7 @@ footer p{margin:0 0 4px}
 
   <section class="s alt" aria-labelledby="t-rev"><div class="wrap">
     <h2 id="t-rev">Vos clients en parlent</h2>
-    <div class="rev-head"><span class="big">4,9</span><span class="st" aria-hidden="true">★★★★★</span><span>11 avis sur Google</span></div>
-    <p class="sub">Ici s'afficheront vos avis Google, pour rassurer les nouveaux clients.</p>
+    <div class="revbox"><div><span class="big">4,9</span> <span class="st" aria-label="4,9 sur 5">★★★★★</span><p>Note moyenne sur 11 avis Google</p></div><a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&query=Mateu%20%C3%89lectricit%C3%A9%20Saint-Laurent-de-Mure" target="_blank" rel="noopener">Voir les avis sur Google</a></div>
   </div></section>
 
   <section class="s" id="contact" aria-labelledby="t-zone"><div class="wrap zone">

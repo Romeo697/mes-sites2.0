@@ -155,15 +155,30 @@ footer p{margin:0 0 4px}
 @media (max-width:820px){.callbar{display:flex}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+.ph{color:var(--accent);background:radial-gradient(circle at 18% 22%,color-mix(in srgb,var(--warm) 38%,#fff) 0 16%,transparent 17%),radial-gradient(circle at 82% 78%,color-mix(in srgb,var(--accent) 22%,#fff) 0 24%,transparent 25%),radial-gradient(circle at 70% 18%,rgba(255,255,255,.7) 0 7%,transparent 8%),linear-gradient(135deg,color-mix(in srgb,var(--accent) 12%,#fff),color-mix(in srgb,var(--warm) 24%,#fff))}
+.gal figure:nth-child(2) .ph{background:radial-gradient(circle at 80% 25%,color-mix(in srgb,var(--warm) 38%,#fff) 0 18%,transparent 19%),radial-gradient(circle at 15% 85%,color-mix(in srgb,var(--accent) 20%,#fff) 0 26%,transparent 27%),linear-gradient(200deg,color-mix(in srgb,var(--warm) 18%,#fff),color-mix(in srgb,var(--accent) 16%,#fff))}
+.gal figure:nth-child(3) .ph{background:radial-gradient(circle at 50% 110%,color-mix(in srgb,var(--accent) 26%,#fff) 0 40%,transparent 41%),radial-gradient(circle at 22% 20%,rgba(255,255,255,.8) 0 9%,transparent 10%),linear-gradient(160deg,color-mix(in srgb,var(--accent) 10%,#fff),color-mix(in srgb,var(--warm) 30%,#fff))}
+.gal figure:nth-child(4) .ph{background:radial-gradient(circle at 25% 75%,color-mix(in srgb,var(--warm) 34%,#fff) 0 22%,transparent 23%),radial-gradient(circle at 78% 30%,color-mix(in srgb,var(--accent) 18%,#fff) 0 20%,transparent 21%),linear-gradient(90deg,color-mix(in srgb,var(--accent) 14%,#fff),color-mix(in srgb,var(--warm) 20%,#fff))}
+.ph svg{width:72px;height:72px;max-width:none;padding:16px;background:#fff;border-radius:50%;box-shadow:0 8px 22px rgba(0,0,0,.10)}
+.about .ph svg{width:92px;height:92px;padding:20px}
+.tar{max-width:720px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 22px}
+.tar-r{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.tar-r:last-child{border-bottom:0}
+.tar-r b{color:var(--accent);white-space:nowrap;font-variant-numeric:tabular-nums}
+.tar-note{max-width:720px;margin:12px 0 0;font-size:13px;color:var(--muted)}
+.revbox{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 24px}
+.revbox .big{font-size:48px;font-weight:800;line-height:1}
+.revbox .st{font-size:22px}
+.revbox p{margin:4px 0 0;color:var(--muted)}
 .logo-m{font-size:16px}
 .demo{background:#eef4ff;color:#23406e;border-bottom-color:#c9d8f2}</style>
 </head>
 <body>
-<p class="demo">Maquette proposée à L'Auvergnat Toiture · non publiée · textes et photos à valider ensemble</p>
+<p class="demo">Maquette proposée à L'Auvergnat Toiture · images d'illustration · tout est modifiable</p>
 
 <div class="info"><div class="wrap">
   <span>Tél. <b>06 67 11 89 44</b></span>
-  <span class="hide-s">Horaires à compléter</span>
+  <span class="hide-s">Sur rendez-vous</span>
   <span>Saint-Bonnet-de-Mure</span>
 </div></div>
 
@@ -171,6 +186,7 @@ footer p{margin:0 0 4px}
   <a class="logo" href="#accueil"><span class="logo-m">AT</span><span class="logo-n">L'Auvergnat Toiture<small>Couvreur · Saint-Bonnet-de-Mure</small></span></a>
   <nav class="nav" aria-label="Menu">
     <a href="#services">Nos services</a>
+    <a href="#tarifs">Tarifs</a>
     <a href="#apropos">L'Auvergnat Toiture</a>
     <a href="#contact">Contact</a>
     <a class="btn btn-main" href="#devis">Devis</a>
@@ -193,14 +209,14 @@ footer p{margin:0 0 4px}
       
       <p class="card-t">Demander un devis</p>
       <span class="card-tel">06 67 11 89 44</span>
-      <p class="card-h">Horaires à compléter</p>
+      <p class="card-h">Sur rendez-vous</p>
       <a class="btn btn-main block" href="#devis">Demander un devis</a>
     </aside>
   </div></section>
 
   <section class="s" id="services" aria-labelledby="t-svc"><div class="wrap">
     <h2 id="t-svc">Nos services</h2>
-    <p class="sub">Liste à valider avec vous.</p>
+    <p class="sub">Découvrez nos prestations.</p>
     <div class="grid3">
       <article class="svc"><div class="svc-h"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h14a4 4 0 0 1 4 4v2M16 22c0-3 3-5 3-7 0 2 3 4 3 7a3 3 0 0 1-6 0Z"/></svg><h3>Recherche de fuite</h3></div><p>Repérage et réparation des tuiles et faîtages.</p></article>
       <article class="svc"><div class="svc-h"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16 16 5l13 11M7 13v14h18V13"/><path d="M13 27v-7h6v7"/></svg><h3>Rénovation de toiture</h3></div><p>Remplacement de la couverture.</p></article>
@@ -211,8 +227,14 @@ footer p{margin:0 0 4px}
     </div>
   </div></section>
 
+  <section class="s" id="tarifs" aria-labelledby="t-tar"><div class="wrap">
+    <h2 id="t-tar">Tarifs</h2>
+    <div class="tar"><div class="tar-r"><span>Recherche de fuite</span><b>Sur devis</b></div><div class="tar-r"><span>Rénovation de toiture</span><b>Sur devis</b></div><div class="tar-r"><span>Zinguerie</span><b>Sur devis</b></div><div class="tar-r"><span>Démoussage</span><b>Sur devis</b></div><div class="tar-r"><span>Isolation</span><b>Sur devis</b></div><div class="tar-r"><span>Velux et cheminées</span><b>Sur devis</b></div></div>
+    <p class="tar-note">Chaque demande est différente : contactez-nous pour recevoir un devis détaillé.</p>
+  </div></section>
+
   <section class="s alt" id="apropos" aria-labelledby="t-about"><div class="wrap about">
-    <div class="ph" role="img" aria-label="Emplacement photo : L'Auvergnat Toiture"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h14a4 4 0 0 1 4 4v2M16 22c0-3 3-5 3-7 0 2 3 4 3 7a3 3 0 0 1-6 0Z"/></svg><span class="ph-tag">Vos photos ici</span></div>
+    <div class="ph" role="img" aria-label="Illustration : L'Auvergnat Toiture"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h14a4 4 0 0 1 4 4v2M16 22c0-3 3-5 3-7 0 2 3 4 3 7a3 3 0 0 1-6 0Z"/></svg><span class="ph-tag">Illustration</span></div>
     <div>
       <h2 id="t-about">L'Auvergnat Toiture</h2>
       <p>L'Auvergnat Toiture est installé au 14 bis chemin de Manissieux, à Saint-Bonnet-de-Mure.</p>
@@ -223,12 +245,12 @@ footer p{margin:0 0 4px}
 
   <section class="s" aria-labelledby="t-gal"><div class="wrap">
     <h2 id="t-gal">Nos chantiers</h2>
-    <p class="sub">Ces emplacements accueilleront vos propres photos.</p>
+    <p class="sub">Images d'illustration, remplacées par vos propres photos sur le site final.</p>
     <div class="gal">
-      <figure><div class="ph" role="img" aria-label="Emplacement photo : Toiture"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16 16 5l13 11M7 13v14h18V13"/><path d="M13 27v-7h6v7"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Toiture</b></figcaption></figure>
-      <figure><div class="ph" role="img" aria-label="Emplacement photo : Zinguerie"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h24v4H4ZM22 12v14M18 26h8"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Zinguerie</b></figcaption></figure>
-      <figure><div class="ph" role="img" aria-label="Emplacement photo : Réparation"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0M4 20a4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Réparation</b></figcaption></figure>
-      <figure><div class="ph" role="img" aria-label="Emplacement photo : Démoussage"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h24M4 24h24M8 8c4 4-4 4 0 8s-4 4 0 8M16 8c4 4-4 4 0 8s-4 4 0 8M24 8c4 4-4 4 0 8s-4 4 0 8"/></svg><span class="ph-tag">Vos photos ici</span></div><figcaption><b>Démoussage</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Illustration : Toiture"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16 16 5l13 11M7 13v14h18V13"/><path d="M13 27v-7h6v7"/></svg><span class="ph-tag">Illustration</span></div><figcaption><b>Toiture</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Illustration : Zinguerie"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h24v4H4ZM22 12v14M18 26h8"/></svg><span class="ph-tag">Illustration</span></div><figcaption><b>Zinguerie</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Illustration : Réparation"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0M4 20a4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0"/></svg><span class="ph-tag">Illustration</span></div><figcaption><b>Réparation</b></figcaption></figure>
+      <figure><div class="ph" role="img" aria-label="Illustration : Démoussage"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h24M4 24h24M8 8c4 4-4 4 0 8s-4 4 0 8M16 8c4 4-4 4 0 8s-4 4 0 8M24 8c4 4-4 4 0 8s-4 4 0 8"/></svg><span class="ph-tag">Illustration</span></div><figcaption><b>Démoussage</b></figcaption></figure>
     </div>
   </div></section>
 
@@ -240,14 +262,14 @@ footer p{margin:0 0 4px}
     <div>
       <h2 id="t-zone">Zone d'intervention</h2>
       <p class="sub">Basés à Saint-Bonnet-de-Mure, nous intervenons dans les communes voisines.</p>
-      <ul class="towns"><li>Saint-Bonnet-de-Mure</li><li>Et alentours (à préciser)</li></ul>
+      <ul class="towns"><li>Saint-Bonnet-de-Mure</li><li>Et alentours</li></ul>
     </div>
     <div class="coord">
       <h3>L'Auvergnat Toiture</h3>
       <p>14 bis chemin de Manissieux<br>69720 Saint-Bonnet-de-Mure</p>
       <p>Tél. <b>06 67 11 89 44</b></p>
       
-      <p>Horaires à compléter</p>
+      <p>Sur rendez-vous</p>
       <a class="btn btn-main block" href="#devis" style="margin-top:14px">Demander un devis</a>
     </div>
   </div></section>
@@ -280,7 +302,7 @@ footer p{margin:0 0 4px}
 <footer>
   <div class="wrap">
     <div><b>L'Auvergnat Toiture</b><p>Couvreur · Saint-Bonnet-de-Mure</p><p>14 bis chemin de Manissieux, 69720 Saint-Bonnet-de-Mure</p></div>
-    <div><b>Contact</b><p>Tél. 06 67 11 89 44</p><p>Horaires à compléter</p></div>
+    <div><b>Contact</b><p>Tél. 06 67 11 89 44</p><p>Sur rendez-vous</p></div>
     <div><b>Informations</b><p>Mentions légales</p><p>Politique de confidentialité</p></div>
   </div>
   <p class="copy">© 2026 L'Auvergnat Toiture</p>
